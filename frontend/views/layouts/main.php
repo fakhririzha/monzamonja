@@ -66,7 +66,7 @@ AppAsset::register($this);
 
         $menuItems[] =
           [
-            'label' => 'MonzaMonza',
+            'label' => 'Menu',
             'items' => $items,
           ];
 

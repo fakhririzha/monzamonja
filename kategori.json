@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"4.8.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"u906317790_monza"},
+{"type":"table","name":"kategori","database":"u906317790_monza","data":
+[
+{"idKategori":"1","namaKategori":"Barang Dijual"},
+{"idKategori":"2","namaKategori":"Barang Gratis"},
+{"idKategori":"3","namaKategori":"Semua Barang"}
+]
+}
+]
