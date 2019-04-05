@@ -2,7 +2,29 @@ html,
 body {
     height: 100%;
 }
-
+.fiftypx {
+	height: 15px;
+}
+@media (max-width: 576px){
+	.card-img-top {
+		height: 100%;
+	}
+}
+@media (min-width: 577px){
+	.card-img-top {
+		height: 235px;
+	}
+}
+@media (min-width: 720px){
+	.card-img-top {
+		height: 225px;
+	}
+}
+@media (min-width: 1196px){
+	.card-img-top {
+		height: 200px;
+	}
+}
 .wrap {
     min-height: 100%;
     height: auto;

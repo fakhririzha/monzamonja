@@ -59,10 +59,10 @@ AppAsset::register($this);
           $items[] = array('label' => $kategori->namaKategori, 'url' => ['product/index', 'ProductSearch[idKategori]' => $kategori->idKategori]);
         }
 
-        $items[] = array('label' => 'Donasi', 'url' => ['news/index', 'NewsSearch[tipe]' => 'donasi']);
-        $items[] = array('label' => 'News', 'url' => ['news/index', 'NewsSearch[tipe]' => 'pengumuman']);
-        $items[] = array('label' => 'About', 'url' => ['site/about']);
-        $items[] = array('label' => 'Terms and Condition', 'url' => ['site/uploadtermsandagreement']);
+        // $items[] = array('label' => 'Donasi', 'url' => ['news/index', 'NewsSearch[tipe]' => 'donasi']);
+        // $items[] = array('label' => 'Berita', 'url' => ['news/index', 'NewsSearch[tipe]' => 'pengumuman']);
+        // $items[] = array('label' => 'Tentang', 'url' => ['site/about']);
+        // $items[] = array('label' => 'Syarat dan Ketentuan', 'url' => ['site/uploadtermsandagreement']);
 
         $menuItems[] =
           [
@@ -142,7 +142,7 @@ AppAsset::register($this);
             <div class="row">
                 <div class="p-4 col-md-4">
                     <h2 class="mb-4 text-secondary">Monza</h2>
-                    <p class="text-white">Membantu anda mengurangi barang bekas yang tidak terpakai dan menjadikannya rezeki + pahala</p>
+                    <p class="text-white">Membantu anda mengurangi barang bekas yang tidak terpakai dan menjadikannya rezeki + pahala.</p>
                 </div>
                 <div class="p-4 col-md-4">
                     <h2 class="mb-4 text-secondary">Mapsite</h2>
@@ -153,12 +153,18 @@ AppAsset::register($this);
                         <br>
                         <?= Html::a("Donasi", ['news/index', 'NewsSearch[tipe]' => 'donasi']) ?>
                         <br>
+                        <?= Html::a("Berita", ['news/index', 'NewsSearch[tipe]' => 'berita']) ?>
+                        <br>
+                        <?= Html::a("Tentang", ['news/index', 'NewsSearch[tipe]' => 'tentang']) ?>
+                        <br>
+                        <?= Html::a("Syarat dan Ketentuan", ['news/index', 'NewsSearch[tipe]' => 'syaratdanketentuan']) ?>
+                        <br>
                     </ul>
                 </div>
                 <div class="p-4 col-md-4">
                     <h2 class="mb-4">Contact</h2>
                     <p>
-                        <a href="tel:+6287776619168" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62877 - 7661 - 9168</a>
+                        <a href="tel:+6287776619168" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62 877-7661-9168</a>
                     </p>
                     <p>
                         <a href="mailto:admin@monzamonza.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>admin@monzamonza.com</a>
@@ -178,7 +184,7 @@ AppAsset::register($this);
             </div>
             <div class="row">
                 <div class="col-md-12 mt-3">
-                    <p class="text-center text-white">� Copyright 2017 Monja - All rights reserved. </p>
+                    <p class="text-center text-white">&copy; Copyright <?= date('Y') ?> Monja - All rights reserved. </p>
                 </div>
             </div>
         </div>

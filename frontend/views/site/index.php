@@ -151,7 +151,7 @@ if (isset($_GET['Cari'])) {
         	<img class='slide' src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' style='height:100%; width:100%; object-fit: cover'>
 			<div class='container'>
 				<div class='carousel-caption'>
-					<h1>$news->judul
+					<h1>
 				</div>
 			</div>", ['news/view', 'id' => $news->idNews]) ?></h1>
 

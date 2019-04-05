@@ -253,9 +253,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<div class="panel-heading" role="tab" id="headingTwo">
 					<h4 class="panel-title">
 						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							<header>
-							<h4><b>Pusing Cari Barang Terlalu Banyak? Untuk Filter Pencarian Klik Disini >>><br>(Do You Want to Filter Products? Click Here) >>></b></h4>
-							</header>
+							<button class="btn btn-primary">Filter Pencarian</button>
 						</a>
 					</h4>
 				</div>
@@ -288,7 +286,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	]); */ ?>
 
 	<div class="py-5 bg-light text-dark">
-		<div class="container">
+		<div class="container-fluid">
 			<?php 
 				echo ListView::widget([
 			   'dataProvider' => $dataProvider,
