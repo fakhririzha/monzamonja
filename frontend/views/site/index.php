@@ -99,7 +99,7 @@ if (isset($_GET['Cari'])) {
 		<li data-target="#myCarousel" data-slide-to="2"></li>
 	</ol>-->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
+        <!-- <div class="item active">
             <img class="first-slide" src="../../../common/file/buku.jpeg" alt="First slide">
             <div class="container">
                 <div class="carousel-caption" style="top: 30%;">
@@ -117,7 +117,7 @@ if (isset($_GET['Cari'])) {
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--<div class="item">
 			<img class="second-slide" src="../../../common/file/buku.jpeg" alt="Second slide">
 			<div class="container">
