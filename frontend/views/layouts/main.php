@@ -91,7 +91,7 @@ AppAsset::register($this);
           $menuItems[] = '<li>'
             . Html::beginForm(['/user-edit/view'])
             . Html::submitButton(
-              'Ubah Profil' . Yii::$app->user->identity->username,
+              'Ubah Profil (' . Yii::$app->user->identity->username . ')',
               ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
@@ -100,7 +100,7 @@ AppAsset::register($this);
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(
               //'Logout (' . Yii::$app->user->identity->username . ')',
-              'Keluar (Logout)',
+              'Keluar',
               ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
