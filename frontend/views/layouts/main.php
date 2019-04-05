@@ -72,7 +72,8 @@ AppAsset::register($this);
 
         $kategoriBarang2s = KategoriBarang2::find()->orderBy(['idKategoriBarang1' => SORT_ASC])->all();
         foreach ($kategoriBarang2s as $kategoriBarang2) {
-          $categoriesItems[] = array('label' => $kategoriBarang2->kategoriBarang1->namaKategoriBarang . ' - ' . $kategoriBarang2->namaKategoriBarang, 'url' => ['product/index', 'ProductSearch[idKategoriBarang2]' => $kategoriBarang2->idKategoriBarang2]);
+          // $categoriesItems[] = array('label' => $kategoriBarang2->kategoriBarang1->namaKategoriBarang . ' - ' . $kategoriBarang2->namaKategoriBarang, 'url' => ['product/index', 'ProductSearch[idKategoriBarang2]' => $kategoriBarang2->idKategoriBarang2]);
+          $categoriesItems[] = array('label' => $kategoriBarang2->kategoriBarang1->namaKategoriBarang, 'url' => ['product/index', 'ProductSearch[idKategoriBarang2]' => $kategoriBarang2->idKategoriBarang2]);
         }
 
         $menuItems[] =
