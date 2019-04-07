@@ -264,7 +264,7 @@ class ProductController extends Controller
             else if(($model->harga != 0) && ($model->idKategori == 2))
             {
                 $model->idKategori = 1;
-                $warning = 'Anda memberikan harga pada barang gratis. Sistem kami telah secara otomatis mengubahnya menjadi barang untuk dijual (You just made a giveaway, however you put price on it. So, our system automatically categorized the product as "things to sell")';
+                $warning = 'Anda memberikan harga pada barang gratis. Sistem kami telah secara otomatis mengubahnya menjadi barang untuk dijual (You just set price to a freebies. So, our system automatically categorized the product as "things to sell")';
             }
             
             /*$imageName = $model->foto;

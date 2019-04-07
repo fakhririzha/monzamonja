@@ -164,13 +164,13 @@ AppAsset::register($this);
                 <div class="p-4 col-md-4">
                     <h2 class="mb-4">Contact</h2>
                     <p>
-                        <a href="tel:+6287776619168" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62 877-7661-9168</a>
+                        <a href="tel:+6287776619168" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i> +62 877-7661-9168</a>
                     </p>
                     <p>
-                        <a href="mailto:admin@monzamonza.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>admin@monzamonza.com</a>
+                        <a href="mailto:admin@monzamonza.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i> admin@monzamonza.com</a>
                     </p>
                     <p>
-                        <a href="https://goo.gl/maps/vbchnSfSVoK2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-secondary"></i>365 Medan, Indonesia</a>
+                        <a href="https://goo.gl/maps/vbchnSfSVoK2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-secondary"></i> 365 Medan, Indonesia</a>
                     </p>
                 </div>
                 <!--<div class="p-4 col-md-3">
