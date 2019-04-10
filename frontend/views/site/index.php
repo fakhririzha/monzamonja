@@ -7,6 +7,7 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use common\models\News;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 
@@ -15,7 +16,7 @@ include_once("../../analyticstracking.php");
 $this->title = 'MonzaMonza';
 
 if (isset($_GET['Cari'])) {
-	header("Location: http://www.monzamonza.com/frontend/web/index.php?r=product/index&ProductSearch[namaBarang]=" . $_GET['namaBarang']);
+    header("Location: http://www.monzamonza.com/frontend/web/index.php?r=product/index&ProductSearch[namaBarang]=" . $_GET['namaBarang']);
 }
 ?>
 
@@ -140,15 +141,15 @@ if (isset($_GET['Cari'])) {
 		</div>-->
 
         <?php
-				$newss = News::find()->where(['headline' => 'headline'])->all();
-				$i = 0;
-				$height = "<script>document.write(screen.height); </script>" . "px";
+        $newss = News::find()->where(['headline' => 'headline'])->all();
+        $i = 0;
+        $height = "<script>document.write(screen.height); </script>" . "px";
 
 
-				foreach ($newss as $news) {
-					?>
+        foreach ($newss as $news) {
+            ?>
         <?= Html::a("<div class='item'>
-        	<img class='slide' src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' style='height:100%; width:100%; object-fit: cover'>
+        	<img class='slide' src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' style=''>
 			<div class='container'>
 				<div class='carousel-caption'>
 					<h1>
@@ -156,9 +157,9 @@ if (isset($_GET['Cari'])) {
 			</div>", ['news/view', 'id' => $news->idNews]) ?></h1>
 
         <?php 
-				echo "</div>";
-			}
-			?>
+        echo "</div>";
+    }
+    ?>
 
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -215,21 +216,21 @@ if (isset($_GET['Cari'])) {
         <div class="row">
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="../../../common/file/foto_haritz.jpg">
+                    <img class="img-fluid rounded-circle mb-3" src="../../common/file/foto_haritz.jpg">
                     <h5>Haritz</h5>
                     <p class="font-weight-light mb-0">"Lebih mudah cari barang murah disini, terima kasih Monza!"</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="../../../common/file/foto_latif.png">
+                    <img class="img-fluid rounded-circle mb-3" src="../../common/file/foto_latif.png">
                     <h5>Abdul Latif </h5>
                     <p class="font-weight-light mb-0">"Bersih-bersih rumah sambil berbagi, sukses terus Monza!"</p>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="../../../common/file/foto_cindy.jpg">
+                    <img class="img-fluid rounded-circle mb-3" src="../../common/file/foto_cindy.jpg">
                     <h5>Cindy</h5>
                     <p class="font-weight-light mb-0">"Berguna banget bagi yang punya barang menumpuk tak terpakai di rumah!"</p>
                 </div>
