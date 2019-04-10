@@ -25,29 +25,26 @@ if (isset($_GET['Cari'])) {
 -------------------------------------------------- */
 
     /* Carousel base class */
-    .carousel {
+    /* .carousel {
         height: 500px;
         margin-bottom: 60px;
-    }
+    } */
 
     /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
+    /* .carousel-caption {
         z-index: 10;
-    }
+    } */
 
     /* Declare heights because of positioning of img element */
-    .carousel .item {
+    /* .carousel .item {
         height: 500px;
         background-color: #777;
-    }
+    } */
 
-    .carousel-inner>.item>img {
-        /*position: absolute;
-  top: 0;
-  left: 0;*/
+    /* .carousel-inner>.item>img {
         min-width: 100%;
         height: 500px;
-    }
+    } */
 
     /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -93,52 +90,7 @@ if (isset($_GET['Cari'])) {
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <!--<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	</ol>-->
     <div class="carousel-inner" role="listbox">
-        <!-- <div class="item active">
-            <img class="first-slide" src="../../../common/file/buku.jpeg" alt="First slide">
-            <div class="container">
-                <div class="carousel-caption" style="top: 30%;">
-                    <header>
-                        <h1>Cari barang murah / gratisan disini!</h1>
-                    </header>
-                    <form action="#" method='GET'>
-                        <div class="form-row">
-                            <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                <input type="text" class="form-control form-control-lg" placeholder="Cari barang murah..." name='namaBarang' id="namaBarang">
-                            </div>
-                            <div class="col-12 col-md-3">
-                                <input type="submit" class="btn btn-block btn-lg btn-primary" name='Cari' id='Cari' value='Cari'>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div> -->
-        <!--<div class="item">
-			<img class="second-slide" src="../../../common/file/buku.jpeg" alt="Second slide">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1>Another example headline.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-					<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1>One more for good measure.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-					<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-				</div>
-			</div>
-		</div>-->
 
         <?php
         $newss = News::find()->where(['headline' => 'headline'])->all();
@@ -146,13 +98,17 @@ if (isset($_GET['Cari'])) {
         $height = "<script>document.write(screen.height); </script>" . "px";
 
 
-        foreach ($newss as $news) {
+        foreach ($newss as $news) { ?>
+            <?php
+            echo "
+            <div class='item'>
+                <a href='" . Url::to(['news/view', 'id' => $news->idNews]) . "'>
+                    <img src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' class='d-block w-100'>
+                </a>
+            </div>
+            ";
             ?>
-        <?= Html::a("<div class='item'>
-        	<img class='slide' src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' style=''>", ['news/view', 'id' => $news->idNews]) ?></h1>
-
-        <?php 
-        echo "</div>";
+        <?php
     }
     ?>
 
@@ -232,4 +188,4 @@ if (isset($_GET['Cari'])) {
             </div>
         </div>
     </div>
-</section> 
+</section>
