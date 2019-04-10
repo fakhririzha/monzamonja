@@ -149,12 +149,7 @@ if (isset($_GET['Cari'])) {
         foreach ($newss as $news) {
             ?>
         <?= Html::a("<div class='item'>
-        	<img class='slide' src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' style=''>
-			<div class='container'>
-				<div class='carousel-caption'>
-					<h1>
-				</div>
-			</div>", ['news/view', 'id' => $news->idNews]) ?></h1>
+        	<img class='slide' src='../../common/file/news/" . $news->idNews . "_title.jpg' alt='$news->judul' style=''>", ['news/view', 'id' => $news->idNews]) ?></h1>
 
         <?php 
         echo "</div>";
