@@ -89,7 +89,7 @@ if (isset($_GET['Cari'])) {
 
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide container" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
 
         <?php
@@ -168,11 +168,19 @@ if (isset($_GET['Cari'])) {
     </div>
 </section>
 
+<!-- Video Section -->
+<section class="video-section">
+    <h2 style="text-align: center; color: white; padding-top: 35px;">Tentang Kami</h2>
+    <div class="video-content container" style="text-align: center;">
+        <iframe src="https://www.youtube.com/embed?v=12asda" frameborder="0" allowfullscreen width="100%" height="480"></iframe>
+    </div>
+</section>
+
 
 <!-- Testimonials -->
 <section class="testimonials text-center bg-light">
     <div class="container">
-        <h2 class="mb-5 testimoni-judul">Testimoni Pengguna</h2>
+        <h2 class="testimoni-judul">Testimoni Pengguna</h2>
         <div class="row">
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
