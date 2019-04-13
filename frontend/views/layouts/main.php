@@ -146,31 +146,31 @@ AppAsset::register($this);
         </div>
         <div class="p-4 col-md-4">
           <h2 class="mb-4 text-secondary">Navigasi</h2>
-          <ul class="list-unstyled text-white">
-            <?= Html::a("Jual Beli", ['product/index', 'ProductSearch[idKategori]' => 1]) ?>
-            <br>
-            <?= Html::a("Giveaway", ['product/index', 'ProductSearch[idKategori]' => 2]) ?>
-            <br>
-            <?= Html::a("Donasi", ['news/index', 'NewsSearch[tipe]' => 'donasi']) ?>
-            <br>
-            <?= Html::a("Berita", ['news/index', 'NewsSearch[tipe]' => 'berita']) ?>
-            <br>
-            <?= Html::a("Tentang", ['news/index', 'NewsSearch[tipe]' => 'tentang']) ?>
-            <br>
-            <?= Html::a("Syarat dan Ketentuan", ['news/index', 'NewsSearch[tipe]' => 'syaratdanketentuan']) ?>
-            <br>
-          </ul>
+          <table class="table table-borderless">
+            <tr>
+              <td><?= Html::a("Jual Beli", ['product/index', 'ProductSearch[idKategori]' => 1]) ?></td>
+              <td><?= Html::a("Giveaway", ['product/index', 'ProductSearch[idKategori]' => 2]) ?></td>
+            </tr>
+            <tr>
+              <td><?= Html::a("Donasi", ['news/index', 'NewsSearch[tipe]' => 'donasi']) ?></td>
+              <td><?= Html::a("Berita", ['news/index', 'NewsSearch[tipe]' => 'berita']) ?></td>
+            </tr>
+            <tr>
+              <td><?= Html::a("Tentang", ['news/index', 'NewsSearch[tipe]' => 'tentang']) ?></td>
+              <td><?= Html::a("Syarat dan Ketentuan", ['news/index', 'NewsSearch[tipe]' => 'syaratdanketentuan']) ?></td>
+            </tr>
+          </table>
         </div>
         <div class="p-4 col-md-4">
           <h2 class="mb-4">Kontak Kami</h2>
           <p>
-            <a href="tel:+6287776619168" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i> +62 877-7661-9168</a>
+            <a href="tel:+6285373474968" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i> +62 853-7347-4968</a>
           </p>
           <p>
-            <a href="mailto:admin@monzamonza.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i> admin@monzamonza.com</a>
+            <a href="mailto:monzamonja@gmail.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i> monzamonja@gmail.com</a>
           </p>
           <p>
-            <a href="https://goo.gl/maps/vbchnSfSVoK2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-secondary"></i> 365 Medan, Indonesia</a>
+            <a href="https://goo.gl/maps/vbchnSfSVoK2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-secondary"></i> Jl. Jamin Ginting, Padang Bulan, Medan.</a>
           </p>
         </div>
         <!--<div class="p-4 col-md-3">

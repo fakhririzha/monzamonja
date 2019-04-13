@@ -136,7 +136,7 @@ if (isset($_GET['Cari'])) {
 <section class="features-icons bg-light text-center">
     <div class="container">
         <div class="row" style="margin-top: 150px;">
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <?= Html::a("<div class='features-icons-icon d-flex'>
 						<i class='glyphicon glyphicon-shopping-cart'></i>
@@ -145,7 +145,7 @@ if (isset($_GET['Cari'])) {
 					<p class='lead mb-0 cc' style='color:black;'>Punya barang tidak terpakai? Daripada menumpuk di rumah, lebih baik anda jual saja di Monza, bisa dapat uang tambahan dan rumah lebih bersih!</p>", ['product/index', 'ProductSearch[idKategori]' => 1]) ?>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <?= Html::a("<div class='features-icons-icon d-flex'>
 						<i class='glyphicon glyphicon-gift'></i>
@@ -154,31 +154,41 @@ if (isset($_GET['Cari'])) {
 					<p class='lead mb-0 cc' style='color:black;'>Ingin menyingkirkan barang yang tidak dipakai sembari mencari pahala? Kasih saja kepada yang lebih membutuhkan dengan Monza!</p>", ['product/index', 'ProductSearch[idKategori]' => 2]) ?>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-12">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                     <?= Html::a("<div class='features-icons-icon d-flex'>
 						<i class='glyphicon glyphicon-time'></i>
 					</div>
 					<p class='btn btn-landing'>Donasi</p>
 					<p class='lead mb-0 cc' style='color:black;'>Mau berdonasi? Lihat event donasi kami disini!</p>", ['news/index', 'NewsSearch[tipe]' => 'donasi']) ?>
-                    <p class="lead mb-0">Ingin mengadakan event donasi sendiri? Hubungi kami di <a href="mailto:admin@monzamonza.com"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>admin@monzamonza.com</a> atau <a href="tel:+62877-7661-9168"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62 877 - 7661 - 9168</a></p>
+                    <p class="lead mb-0">Ingin mengadakan event donasi sendiri? Hubungi kami di <a href="mailto:monzamonja@gmail.com"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>monzamonja@gmail.com</a> atau <a href="tel:+6285373474968"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62 853-7347-4968</a></p>
                 </div>
             </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <?= Html::a('<p class="btn btn-landing">Cek Dulu Yuk!</p>', ['product/index', 'ProductSearch[idKategori]' => 2]) ?>
+            </div>
+            <div class="col-lg-4"></div>
         </div>
     </div>
 </section>
 
+<br>
+<br>
+<br>
+
 <!-- Video Section -->
 <section class="video-section">
     <h2 style="text-align: center; color: white; padding-top: 35px;">Tentang Kami</h2>
-    <div class="video-content container" style="text-align: center;">
-        <iframe src="https://www.youtube.com/embed?v=12asda" frameborder="0" allowfullscreen width="100%" height="480"></iframe>
+    <br>
+    <div class="container" style="text-align: center;">
+        <iframe class="video-content" src="https://www.youtube.com/embed?v=12asda" frameborder="0" allowfullscreen width="100%" height="480"></iframe>
     </div>
 </section>
 
 
 <!-- Testimonials -->
-<section class="testimonials text-center bg-light">
+<!-- <section class="testimonials text-center bg-light">
     <div class="container">
         <h2 class="testimoni-judul">Testimoni Pengguna</h2>
         <div class="row">
@@ -205,4 +215,4 @@ if (isset($_GET['Cari'])) {
             </div>
         </div>
     </div>
-</section>
+</section> -->
