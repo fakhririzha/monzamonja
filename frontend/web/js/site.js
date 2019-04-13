@@ -1,5 +1,5 @@
 var img = document.getElementsByTagName("img");
-img[2].parentElement.parentElement.setAttribute("class", "item active");
+img[1].parentElement.parentElement.setAttribute("class", "item active");
 // var product = Array.from(document.getElementsByClassName("list-view")[0].children);
 // // product.getElementByClassName("item");
 // var empat = [];

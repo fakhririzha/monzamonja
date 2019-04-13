@@ -1097,3 +1097,28 @@ fieldset[disabled] a.btn {
 .btn-block+.btn-block {
   margin-top: 0.5rem;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-landing {
+  background-color: #E67E22;
+  width: 100%;
+  color: white;
+  font-size: 1.75rem;
+}
+
+.btn-landing:hover {
+  background-color: #C26311;
+  color: white;
+  transition: .2s ease-in;
+}
+
+p.lead.mb-0 {
+  font-size: 1.5rem;
+}
+
+p.lead.mb-0.cc {
+  padding-top: 25px;
+}

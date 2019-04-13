@@ -97,6 +97,15 @@ if (isset($_GET['Cari'])) {
         $i = 0;
         $height = "<script>document.write(screen.height); </script>" . "px";
 
+        echo '<ol class="carousel-indicators">';
+        for ($i = 0; $i < count($newss); $i++) {
+            echo
+                "
+                <li data-target='#myCarousel' data-slide-to='$i' class='active'></li>
+            ";
+        }
+        echo '</ol>';
+
 
         foreach ($newss as $news) { ?>
             <?php
@@ -132,8 +141,8 @@ if (isset($_GET['Cari'])) {
                     <?= Html::a("<div class='features-icons-icon d-flex'>
 						<i class='glyphicon glyphicon-shopping-cart'></i>
 					</div>
-					<h3>Jual Beli Barang</h3>
-					<p class='lead mb-0' style='color:black;'>Punya barang tidak terpakai? Daripada menumpuk di rumah, lebih baik anda jual saja di Monza, bisa dapat uang tambahan dan rumah lebih bersih!</p>", ['product/index', 'ProductSearch[idKategori]' => 1]) ?>
+					<p class='btn btn-landing'>Jual Beli Barang</p>
+					<p class='lead mb-0 cc' style='color:black;'>Punya barang tidak terpakai? Daripada menumpuk di rumah, lebih baik anda jual saja di Monza, bisa dapat uang tambahan dan rumah lebih bersih!</p>", ['product/index', 'ProductSearch[idKategori]' => 1]) ?>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -141,8 +150,8 @@ if (isset($_GET['Cari'])) {
                     <?= Html::a("<div class='features-icons-icon d-flex'>
 						<i class='glyphicon glyphicon-gift'></i>
 					</div>
-					<h3>Giveaway</h3>
-					<p class='lead mb-0' style='color:black;'>Ingin menyingkirkan barang yang tidak dipakai sembari mencari pahala? Kasih saja kepada yang lebih membutuhkan dengan Monza!</p>", ['product/index', 'ProductSearch[idKategori]' => 2]) ?>
+					<p class='btn btn-landing'>Giveaway</p>
+					<p class='lead mb-0 cc' style='color:black;'>Ingin menyingkirkan barang yang tidak dipakai sembari mencari pahala? Kasih saja kepada yang lebih membutuhkan dengan Monza!</p>", ['product/index', 'ProductSearch[idKategori]' => 2]) ?>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -150,9 +159,9 @@ if (isset($_GET['Cari'])) {
                     <?= Html::a("<div class='features-icons-icon d-flex'>
 						<i class='glyphicon glyphicon-time'></i>
 					</div>
-					<h3>Donasi</h3>
-					<p class='lead mb-0' style='color:black;'>Mau berdonasi?? Cek yuk event donasi kami disini.</p>", ['news/index', 'NewsSearch[tipe]' => 'donasi']) ?>
-                    <p class="lead mb-0">Mau membuat donasi kamu sendiri?? Hubungi kami di <a href="mailto:admin@monzamonza.com"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>admin@monzamonza.com</a> atau <a href="tel:+62877-7661-9168"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62877 - 7661 - 9168</a></p>
+					<p class='btn btn-landing'>Donasi</p>
+					<p class='lead mb-0 cc' style='color:black;'>Mau berdonasi? Lihat event donasi kami disini!</p>", ['news/index', 'NewsSearch[tipe]' => 'donasi']) ?>
+                    <p class="lead mb-0">Ingin mengadakan event donasi sendiri? Hubungi kami di <a href="mailto:admin@monzamonza.com"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i>admin@monzamonza.com</a> atau <a href="tel:+62877-7661-9168"><i class="fa d-inline mr-3 text-secondary fa-phone"></i>+62 877 - 7661 - 9168</a></p>
                 </div>
             </div>
         </div>
