@@ -167,7 +167,13 @@ AppAsset::register($this);
             <a href="tel:+6285373474968" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-phone"></i> +62 853-7347-4968</a>
           </p>
           <p>
-            <a href="mailto:monzamonja@gmail.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope-o"></i> monzamonja@gmail.com</a>
+            <a href="mailto:monzamonja@gmail.com" class="text-white"><i class="fa d-inline mr-3 text-secondary fa-envelope"></i> monzamonja@gmail.com</a>
+          </p>
+          <p>
+            <a href="https://instagram.com/monzamonja" class="text-white"><i class="fab d-inline mr-3 text-secondary fa-instagram"></i> @monzamonja</a>
+          </p>
+          <p>
+            <a href="https://www.facebook.com/monza.monja.39545" class="text-white"><i class="fab d-inline mr-3 text-secondary fa-facebook"></i> MonzaMonza</a>
           </p>
           <p>
             <a href="https://goo.gl/maps/vbchnSfSVoK2" class="text-white" target="_blank"><i class="fa d-inline mr-3 fa-map-marker text-secondary"></i> Jl. Jamin Ginting, Padang Bulan, Medan.</a>
